@@ -33,6 +33,7 @@
     flex-direction: column;
     width: 768px;
     margin: 0 auto;
+    margin-top: -5rem;
     justify-content: center;
     h1 {
         color: rgb(238, 238, 238);
@@ -115,7 +116,7 @@
         padding: 2rem;
         justify-content: center;
         .skill-col {
-            width: 30%;
+            width: 25%;
             padding: 1rem 2rem;
             h2 {
                 color: white;
@@ -182,4 +183,65 @@
 .inline-link {
     color: $primary;
     cursor: pointer;
+}
+
+.bg-primary {
+    background-color: $bg-primary;
+    color: white;
+    a {
+        color: $primary;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-section .skill-row .skill-col {
+        width: 100%;
+    }
+    .about-section {
+        img {
+            display: none;
+        }
+        .short-intro {
+            width: 100%;
+        }
+    }
+    .intro-content {
+        margin-top: -5rem;
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}
+
+.blog-header {
+    background: rgb(24, 28, 34);
+    color: rgb(238, 238, 238);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    img {
+        margin: 2rem auto;
+        width: 160px;
+    }
+    h1 {
+        color: rgb(238, 238, 238);
+        margin-bottom: 3rem;
+        font-weight: 400;
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+.no-posts {
+    img {
+        width: 300px;
+        margin: 4rem auto 2rem;
+    }
+    h1 {
+        text-align: center;
+    }
 }

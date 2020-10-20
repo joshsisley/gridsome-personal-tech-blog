@@ -1,8 +1,8 @@
 <template>
   <div class="footer-wrapper">
-    <footer id="footer" class="footer bg-gray-200" role="contentinfo">
+    <footer id="footer" class="footer bg-primary" role="contentinfo">
       <div class="footer-inner container m-auto md:flex justify-between items-center px-6 py-10">
-        <p class="text-purple-900 pb-8 md:pb-0">
+        <p class="pb-8 md:pb-0">
           © 2020 Sisley Tech LLC: Built with
           <a
             href="https://www.gridsome.org"
@@ -15,6 +15,7 @@
             <a
               :href="element.link"
               class="block text-gray-500 hover:text-pink-500"
+              v-bind:class="{'mt-1' : element.icon === 'instagram'}"
               :aria-label="element.icon"
               target="_blank"
             >

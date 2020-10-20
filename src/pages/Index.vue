@@ -32,7 +32,7 @@
       </div>
       <div class="short-intro">
         <h1>About Me</h1>
-        <p>Hey there! Let me introduce myself again, my name is Josh and I am a full-stack JavaScript developer. I have over 6 years of experience developing websites and web applications for companies ranging from Startups to some of the largest companies in the country. My go to library on front-end is Angular, and NodeJS on backend.</p>
+        <p>Hey there! Let me introduce myself again, my name is Josh and I am a full-stack JavaScript developer. I have over 6 years of experience developing websites and web applications for companies ranging from Startups to some of the largest companies in the country. My go to library on the front-end is Angular, and NodeJS on the backend.</p>
         <p>Currently, I'm working as a Senior Full Stack Developer at Daysmart Software Inc, building a stable and scalable SaaS application for pet boarding, daycare and groomer facilities.</p>
         <p>If you'd like, you can 
           <g-link
@@ -40,20 +40,34 @@
               class="inline-link"
               active-class="is-active-link"
               exact-active-class="active text-pink-500"
-            >read more about me here</g-link>, or scroll to see the skills and technology that I use daily.</p>
+            >read more about me here</g-link>, or scroll to see the skills and tools that I use daily.</p>
       </div>
     </section>
     <!-- My experience -->
     <section class="bg-polygon skill-section">
       <div>
         <img src="../skills.svg" alt="">
-        <h1>Daily Dev Skills</h1>
+        <h1>Skills &amp; Tools</h1>
       </div>
       <div class="skill-row">
         <div class="skill-col">
-          <h2>Languages &amp; Frameworks</h2>
+          <h2>Front End</h2>
           <div class="skills-vert-row"> 
-            <div class="skill-card" v-for="skill in $static.metadata.skills" :key="skill.name">
+            <div class="skill-card" v-for="skill in $static.metadata.frontend" :key="skill.name">
+              <div class="icon">
+                <img :src="skill.url" width="48">
+              </div>
+              <div class="info">
+                <h3>{{ skill.name }}</h3>
+                <p>{{ skill.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h2>Back End</h2>
+          <div class="skills-vert-row"> 
+            <div class="skill-card" v-for="skill in $static.metadata.backend" :key="skill.name">
               <div class="icon">
                 <img :src="skill.url" width="48">
               </div>
@@ -119,7 +133,12 @@ export default {
 query {
   metadata {
     siteName
-    skills {
+    frontend {
+      name
+      description
+      url
+    }
+    backend {
       name
       description
       url

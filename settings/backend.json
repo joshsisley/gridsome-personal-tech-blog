@@ -1,0 +1,24 @@
+{
+    "backend": [
+        {
+            "name": "Node.js",
+            "description": "",
+            "url": "../nodeicon.png"
+        },
+        {
+            "name": "GraphQl",
+            "description": "",
+            "url": "../graphqlicon.png"
+        },
+        {
+            "name": "Nest.js",
+            "description": "",
+            "url": "../nest.png"
+        },
+        {
+            "name": "Meteor",
+            "description": "",
+            "url": "../meteor.png"
+        }
+    ]
+}

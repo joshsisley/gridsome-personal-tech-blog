@@ -1,9 +1,12 @@
 <template>
   <Layout>
     <section id="container-centre" class="column centre flex-1">
-      <h1 class="page-title text-3xl md:text-center md:text-5xl mb-16 lg:mb-24 lg:text-6xl">Blog</h1>
+      <div class="blog-header">
+        <img :src="'../blog.svg'" width="48">
+        <h1 class="page-title text-3xl md:text-center md:text-5xl mb-16 lg:mb-24 lg:text-6xl">The Blog</h1>
+      </div>
       <div class="px-2">
-        <div class="posts flex flex-wrap -mx-2">
+        <!-- <div class="posts flex flex-wrap -mx-2">
           <div
             class="w-full md:w-1/3 mb-8 px-2"
             v-for="entry in $page.allBlog.edges"
@@ -44,6 +47,10 @@
               </div>
             </article>
           </div>
+        </div> -->
+        <div class="no-posts">
+          <img :src="'../not-found.svg'" />
+          <h1>Posts Coming Soon...</h1>
         </div>
       </div>
     </section>
