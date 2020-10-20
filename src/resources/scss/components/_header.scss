@@ -1,0 +1,64 @@
+@import 'variables';
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    position: fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 999;
+    background: $bg-primary;
+    color: white;
+    .company-logo-link {
+        color: #2B2A30;
+        flex: 1;
+    }
+    .header-container {
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        a {
+            color: white;
+            margin-top: -10px;
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    color: #2B2A30;
+                    font-size: 1.25rem;
+                    margin-left: 1.5rem;
+                    font-weight: 500;
+                    &.active {
+                        color: $primary;
+                    }
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        &.social {
+            flex: 1;
+            flex-direction: row-reverse;
+        }
+        &.logo {
+            flex: 1;
+        }
+        &.pages {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .bracket-logo {
+        color: $primary;
+        font-size: 40px;
+    }
+}

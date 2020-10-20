@@ -1,0 +1,24 @@
+{
+    "tools": [
+        {
+            "name": "Github",
+            "description": "",
+            "url": "../github.png"
+        },
+        {
+            "name": "VS Code",
+            "description": "",
+            "url": "../vscode.png"
+        },
+        {
+            "name": "Jira",
+            "description": "",
+            "url": "../jira.png"
+        },
+        {
+            "name": "Gitlab",
+            "description": "",
+            "url": "../gitlab.png"
+        }
+    ]
+}

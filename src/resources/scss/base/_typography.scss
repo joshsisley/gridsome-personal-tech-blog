@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight mt-0 mb-6 text-purple-900;
+}
+
+.page-title {
+	@apply text-5xl;
+}
+
+
+.content {
+
+	p {
+		@apply mb-8;
+
+		&:first-child {
+			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-gray-600;
+
+			@screen md {
+                @apply text-3xl;
+            }
+		}
+    }
+}
+
+.bg-polygon {
+	background: rgb(34, 40, 49);
+    color: rgb(238, 238, 238);
+    clip-path: polygon(0rem 0rem, 100% 5rem, 100% 100%, 0px 100%);
+    padding-top: 6rem;
+}

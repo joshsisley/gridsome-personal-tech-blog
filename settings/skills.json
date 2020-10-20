@@ -1,0 +1,44 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript",
+            "description": "My go to programming language pretty much for everything. Be it the front-end, backend, or a CLI tool.",
+            "url": "../jsicon.png"
+        },
+        {
+            "name": "TypeScript",
+            "description": "Nice to have.",
+            "url": "../tsicon.png"
+        },
+        {
+            "name": "Node.js",
+            "description": "Nice to have.",
+            "url": "../nodeicon.png"
+        },
+        {
+            "name": "Angular",
+            "description": "Nice to have.",
+            "url": "../angularicon.png"
+        },
+        {
+            "name": "Vue.js",
+            "description": "Nice to have.",
+            "url": "../vueicon.png"
+        },
+        {
+            "name": "HTML",
+            "description": "Nice to have.",
+            "url": "../htmlicon.png"
+        },
+        {
+            "name": "CSS",
+            "description": "Nice to have.",
+            "url": "../cssicon.png"
+        },
+        {
+            "name": "GraphQl",
+            "description": "Nice to have.",
+            "url": "../graphqlicon.png"
+        }
+    ]
+}

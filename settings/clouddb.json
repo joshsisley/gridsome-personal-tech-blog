@@ -1,0 +1,29 @@
+{
+    "clouddb": [
+        {
+            "name": "AWS",
+            "description": "",
+            "url": "../awsicon.png"
+        },
+        {
+            "name": "MongoDB",
+            "description": "",
+            "url": "../mongodbicon.png"
+        },
+        {
+            "name": "MySQL",
+            "description": "",
+            "url": "../mysqlicon.png"
+        },
+        {
+            "name": "Docker",
+            "description": "",
+            "url": "../dockericon.png"
+        },
+        {
+            "name": "PostgresQL",
+            "description": "",
+            "url": "../postgresicon.png"
+        }
+    ]
+}
