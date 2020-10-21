@@ -46,7 +46,7 @@
     <!-- My experience -->
     <section class="bg-polygon skill-section">
       <div>
-        <img src="../skills.svg" alt="">
+        <img :src="'../codetools.svg'" alt="">
         <h1>Skills &amp; Tools</h1>
       </div>
       <div class="skill-row">
@@ -105,6 +105,12 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="skill-action">
+        <p>For some examples of my work please check out my Github by clicking the link below!</p>
+        <div class="btn-container">
+          <a href="https://github.com/joshsisley" target="_blank" rel="noopener noreferrer" class="btn-cta">Go to Github</a>
         </div>
       </div>
     </section>

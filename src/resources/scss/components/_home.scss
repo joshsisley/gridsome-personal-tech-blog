@@ -218,6 +218,29 @@
     }
 }
 
+.skill-action {
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    .btn-container {
+        width: 100%;
+        .btn-cta {
+            width: 450px;
+            margin: 0 auto 5rem;
+            max-width: 98%;
+            background: $primary;
+            color: rgb(34, 40, 49);
+            font-weight: 600;
+            display: block;
+            border-radius: 6px;
+            text-align: center;
+            padding: 0.75rem;
+        }
+    }
+}
+
 .blog-header {
     background: rgb(24, 28, 34);
     color: rgb(238, 238, 238);
