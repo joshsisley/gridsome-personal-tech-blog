@@ -11,7 +11,7 @@
 }
 
 .bg-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../computerdesk.jpg') no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.85) 80%), url('../../me.jpg') no-repeat;
     background-size: cover;
     color: white;
     width: 100%;
@@ -194,6 +194,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .bg-image {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.92) 100%), url('../../me.jpg') no-repeat;
+    }
     .skill-section .skill-row .skill-col {
         width: 100%;
     }
