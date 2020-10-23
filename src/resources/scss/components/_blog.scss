@@ -1,0 +1,211 @@
+.blog-post-container {
+    width: 55%;
+    margin: 0 auto;
+    .post-header {
+        text-align: center;
+        .blog-author-container {
+            margin-top: 3rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            box-sizing: border-box;
+            outline: none;
+            max-width: 100%;
+            min-width: 0px;
+            min-height: 0px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            .author {
+                display: flex;
+                box-sizing: border-box;
+                outline: none;
+                max-width: 100%;
+                min-width: 0px;
+                min-height: 0px;
+                flex-direction: column;
+                color: rgb(57, 62, 70);
+                text-align: left;
+                span {
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+            .share {
+                display: flex;
+                box-sizing: border-box;
+                outline: none;
+                max-width: 100%;
+                min-width: 0px;
+                min-height: 0px;
+                flex-direction: column;
+                span {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 0.8rem;
+                    color: rgb(57, 62, 70);
+                    a {
+                        color: rgb(0, 173, 181);;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    margin: 5px 0px 1rem;
+                    padding: 0px;
+                    font-size: 1.5rem;
+                    li {
+                        margin: 0px 5px;
+                        display: inline-block;
+                        color: rgb(57, 62, 70);
+                        transition: color 200ms ease-out 0s;
+                        :first-child {
+                            margin-left: 0px;
+                        }
+                        a {
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+        .category-container {
+            margin-top: 3rem;
+            margin-bottom: -0.5rem;
+            display: flex;
+            box-sizing: border-box;
+            outline: none;
+            max-width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            min-width: 0px;
+            min-height: 0px;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            ul {
+                display: inline-block;
+                margin: 0px;
+                padding: 0px;
+                li {
+                    display: inline-block;
+                    font-size: 0.9rem;
+                    line-height: 0.9rem;
+                    padding-left: 0px;
+                    padding-right: 10px;
+                    border-right: 1px solid rgb(57, 62, 70);
+                    &:last-child {
+                        border-right: none;
+                    }
+                    a {
+                        color: rgb(0, 173, 181);
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        border: none;
+                        background: none;
+                        padding: 0px;
+                        padding-left: 0.75rem;
+                    }
+                }
+            }
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.58;
+            font-weight: 800;
+            margin-top: 1rem;
+        }
+    }
+    .content {
+        padding: 0 !important;
+    }
+}
+
+.posts {
+    display: flex;
+    box-sizing: border-box;
+    outline: none;
+    max-width: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 900px;
+    article {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 1rem 0px;
+        overflow: hidden;
+        padding: 10px;
+        color: inherit;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: all 200ms ease-in 0s;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        .post-image {
+            max-width: 40%;
+            min-width: 200px;
+            max-height: 250px;
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 1 0 auto;
+            box-shadow: rgb(34, 40, 49) 0px 3px 12px -5px;
+            box-sizing: border-box;
+            outline: none;
+            min-height: 0px;
+            flex-direction: column;
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+        .post-info {
+            width: 60%;
+            justify-content: space-around;
+            padding: 2rem;
+            display: flex;
+            box-sizing: border-box;
+            outline: none;
+            max-width: 100%;
+            min-width: 0px;
+            min-height: 0px;
+            flex-direction: column;
+            header {
+                ul {
+                    display: inline-block;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        display: inline-block;
+                        font-size: 0.9rem;
+                        line-height: 0.9rem;
+                        padding-left: 0px;
+                        padding-right: 10px;
+                        a {
+                            color: rgb(0, 173, 181);
+                            font-weight: 600;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            border: none;
+                            background: none;
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+            .article-name {
+                color: rgb(34, 40, 49);
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+        }
+    }
+}

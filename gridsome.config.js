@@ -32,6 +32,11 @@ module.exports = {
       options: {
         typeName: 'Blog',
         path: './content/blog/**/*.md',
+        remark: {
+          plugins: [
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false } ]
+          ]
+        },
         refs: {
           author: 'Author',
           tags: {

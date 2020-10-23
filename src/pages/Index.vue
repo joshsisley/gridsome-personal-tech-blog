@@ -22,7 +22,7 @@
         <div class="intro-content">
           <h1>Hello, I'm <span>Josh Sisley</span>.</h1>
           <h1>I am a Full-Stack JavaScript Developer.</h1>
-          <h2>I build high performance software applications using the latest cutting edge web development technologies.</h2>
+          <h2>I build high performance SaaS applications using the latest cutting edge web development technologies.</h2>
         </div>
       </div>
     </section>

@@ -1,22 +1,50 @@
 <template>
   <Layout>
-    <section id="container-centre" class="column centre flex-1">
-      <div class="post-header mb-12 md:mb-20">
+    <section id="container-centre" class="blog-post-container">
+      <div class="post-header">
+        <div class="category-container">
+          <ul>
+            <li v-for="tag in $page.blog.tags" :key="tag.id">
+              <g-link :to="tag.path">
+                {{ tag.title}}
+              </g-link>
+            </li>
+          </ul>
+        </div>
         <h1
-          class="page-title text-3xl md:text-center md:text-5xl lg:text-6xl"
           v-html="$page.blog.title"
         ></h1>
-        <div class="text-sm md:text-base text-gray-600 flex justify-center">
-          <p class="author">{{ $page.blog.author.name }}</p>
-          <p class="px-2">—</p>
-          <time :datetime="$page.blog.datetime">{{ $page.blog.humanTime }}</time>
-          <p class="px-2">—</p>
-          <p class="category">
+        <div class="text-sm md:text-base text-gray-600 flex blog-author-container">
+          <div class="author">
+            <span>Posted by <strong>{{ $page.blog.author.name }}</strong></span>
+            <span>on <time :datetime="$page.blog.datetime">{{ $page.blog.humanTime }}</time></span>
+          </div>
+          <div class="share">
+            <span>Posted in <g-link :to="$page.blog.category.path">{{ $page.blog.category.title }}</g-link></span>
+            <!-- <ul>
+              <li>
+                <a>
+                  <img :src="'../../facebook.svg'" />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img :src="'../../twitter.svg'" />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img :src="'../../linkedin.svg'" />
+                </a>
+              </li>
+            </ul> -->
+          </div>
+          <!-- <p class="category">
             Posted in
             <g-link :to="$page.blog.category.path">{{ $page.blog.category.title }}</g-link>
-          </p>
+          </p> -->
         </div>
-        <figure class="mt-10 md:mt-20">
+        <figure>
           <g-image :alt="$page.blog.image_caption" :src="$page.blog.image" />
           <figcaption
             class="text-center text-sm italic text-gray-600 mt-4"

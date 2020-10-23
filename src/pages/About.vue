@@ -4,7 +4,7 @@
       <div class="about-header">
         <div class="info">
           <h1>A little more about me</h1>
-          <p class="hide-on-mobile">I'm a Full-Stack Software Developer with more than 6 years of experience working on websites and single page web apps. When it comes to programming I enjoy the challenging stuff and always try to find the right solution for the problem.</p>
+          <p class="hide-on-mobile">I'm a Full-Stack Software Developer with more than 6 years of experience working on websites and SaaS applications. When it comes to programming I enjoy the challenging stuff and always try to find the right solution for the problem.</p>
           <p>Scroll down to check out my experience as well as some current projects!</p>
         </div>
         <div class="pic">
