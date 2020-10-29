@@ -209,3 +209,10 @@
         }
     }
 }
+
+.border-primary {
+    border-color: #00adb5;
+    &:hover {
+        background: #00adb5 !important;
+    }
+}

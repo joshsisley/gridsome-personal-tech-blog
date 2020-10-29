@@ -6,7 +6,7 @@
         <h1 class="page-title text-3xl md:text-center md:text-5xl mb-16 lg:mb-24 lg:text-6xl">The Blog</h1>
       </div>
       <div class="px-2">
-        <!-- <div class="posts">
+        <div class="posts">
           <div
             class="mb-8 px-2"
             v-for="entry in $page.allBlog.edges"
@@ -36,11 +36,11 @@
             </article>
             </g-link>
           </div>
-        </div> -->
-        <div class="no-posts">
+        </div>
+        <!-- <div class="no-posts">
           <img :src="'../not-found.svg'" />
           <h1>Posts Coming Soon...</h1>
-        </div>
+        </div> -->
       </div>
     </section>
   </Layout>

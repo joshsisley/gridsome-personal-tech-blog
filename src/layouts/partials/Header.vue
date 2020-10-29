@@ -9,7 +9,7 @@
         class="company-logo-link block text-white font-bold text-2xl md:text-3xl hover:text-pink-500"
         to="/"
         aria-label="Back to home"
-      ><img :src="'../logo.png'" /></g-link>
+      ><img :src="'https://sisley.tech/logo.png'" /></g-link>
 
       <nav id="nav" class="nav hidden md:flex pages">
         <ul class="menu flex flex-col md:flex-row items-center list-reset text-base">

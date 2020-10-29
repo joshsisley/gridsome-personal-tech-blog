@@ -32,11 +32,6 @@ module.exports = {
       options: {
         typeName: 'Blog',
         path: './content/blog/**/*.md',
-        remark: {
-          plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false } ]
-          ]
-        },
         refs: {
           author: 'Author',
           tags: {
@@ -47,6 +42,11 @@ module.exports = {
             typeName: 'Category',
             create: true
           }
+        },
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
         }
       }
     }

@@ -57,12 +57,19 @@
         <p v-html="$page.blog.excerpt"></p>
 
         <div v-html="$page.blog.content"></div>
+        
+        <div>
+          Thanks for reading! Follow me on <g-link
+              :to="'https://twitter.com/joshsisley'"
+              class="text-primary"
+            >Twitter</g-link> for more quick tips and advice.
+        </div>
 
         <ul class="flex pt-8 border-t border-gray-100">
           <li class="mr-2" v-for="tag in $page.blog.tags" :key="tag.id">
             <g-link
               :to="tag.path"
-              class="inline-block border border-pink-300 px-4 py-2 text-pink-500 text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500"
+              class="inline-block border border-primary px-4 py-2 text-primary text-xs font-semibold rounded hover:text-white hover:bg-accent"
               
             >{{ tag.title}}</g-link>
           </li>
