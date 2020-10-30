@@ -32,6 +32,7 @@ So let's say that we have the following two arrays of Starks and Targaryens.
 let starks = ['Bran', 'Arya', 'Sansa'];
 let targaryens = ['Daenerys', 'Rhaegar', 'The Mad King'];
 ```
+---
 
 If I want to make a copy of the starks, I would do the following: 
 
@@ -51,6 +52,7 @@ But what if the Starks and Targaryens would want to combine families? This is ho
 let combined = [...starks,...targaryens];
 console.log(combined); // Output => ['Bran', 'Arya', 'Sansa', 'Daenerys', 'Rhaegar', 'The Mad King']
 ```
+---
 
 As you can see, it is pretty straight forward and a nice tool to have for simply combining/concatenating arrays!
 
@@ -62,6 +64,7 @@ Not only can you use the spread (...) operator to copy or combine arrays, you ca
 const expandedTargaryens = ['Jon', ...targaryens];
 console.log(expandedTargaryens); // Output => ['Jon', 'Daenerys', 'Rhaegar', 'The Mad King']
 ```
+---
 
 It's that simple! Jon is now a part of the Targaryens.
 
@@ -78,6 +81,7 @@ let printChoices = (choice1, choice2, choice3) => {
 
 printChoices(...kingChoices); // Output => Choices: Jon, Bran, Tyrion
 ```
+---
 
 As you can see, it actually works out quite simply to spread an array into different arguments and saves you a little time.
 
@@ -99,6 +103,7 @@ console.log(combinedObj); // Output => { firstName: 'Jon', lastName: 'Snow'}
 const combinedCopy = {...combinedObj};
 console.log(combinedCopy); // Output => { firstName: 'Jon', lastName: 'Snow'}
 ```
+---
 
 So similar to arrays, we are able to quickly combine or copy objects. Once again, when copying it creates a new object with no reference to the original object.
 
@@ -117,6 +122,7 @@ console.log(names); // Output => ['Sansa', 'Bran', 'Arya']
 console.log(copyWithEquals); // Output => ['Sansa', 'Bran', 'Arya']
 console.log(copyWithSpread); // Output => ['Jon', 'Bran', 'Arya']
 ```
+---
 
 Looking at the above code, you will notice that the `copyWithSpread` variable returns the unchanged array that it was set to. The `copyWithEquals` variable returns the modified array since it was created using the assignment operator `=`.
 
