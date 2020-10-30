@@ -42,15 +42,17 @@ module.exports = {
             typeName: 'Category',
             create: true
           }
-        },
-        remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
         }
       }
     }
   ],
+  transformers: {
+    remark: {
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  },
   templates: {
     Blog: [{
       path: '/blog/:title',
