@@ -1,6 +1,11 @@
 module.exports = {
   prefix: '',
   important: false,
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.js',
+  ],
   separator: ':',
   theme: {
     colors: {
