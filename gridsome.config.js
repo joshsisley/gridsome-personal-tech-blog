@@ -32,6 +32,7 @@ module.exports = {
       options: {
         typeName: 'Blog',
         path: './content/blog/**/*.md',
+        sort: { by: "created", order: "DESC" },
         refs: {
           author: 'Author',
           tags: {
